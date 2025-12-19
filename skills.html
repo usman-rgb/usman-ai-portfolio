@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Muhammad Usman</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">USMAN.AI</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="internship.html">Internship</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="contact.html" class="cta-button header-cta">Let's Talk →</a>
+    </header>
+
+    <section class="section">
+        <h2>Skills & Proficiency</h2>
+        <p style="max-width: 800px; margin: 0 auto 60px; font-size: 1.2rem; color: var(--text-muted);">
+            A collection of my technical proficiencies and domain expertise in AI/ML.
+        </p>
+
+        <div class="card-grid">
+            <div class="glass-card">
+                <h3><i class="fas fa-robot" style="color: var(--neon-cyan);"></i> Core AI & ML</h3>
+                <div class="skill-tags-list">
+                    <span class="skill-tag-usman">Machine Learning</span>
+                    <span class="skill-tag-usman">Deep Learning</span>
+                    <span class="skill-tag-usman">NLP</span>
+                    <span class="skill-tag-usman">Computer Vision</span>
+                    <span class="skill-tag-usman">Time-Series</span>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <h3><i class="fas fa-code" style="color: var(--neon-cyan);"></i> Frameworks & Libraries</h3>
+                <div class="skill-tags-list">
+                    <span class="skill-tag-usman">TensorFlow</span>
+                    <span class="skill-tag-usman">Keras</span>
+                    <span class="skill-tag-usman">Scikit-learn</span>
+                    <span class="skill-tag-usman">Streamlit</span>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <h3><i class="fas fa-cogs" style="color: var(--neon-cyan);"></i> Programming & Tools</h3>
+                <div class="skill-tags-list">
+                    <span class="skill-tag-usman">Python</span>
+                    <span class="skill-tag-usman">HTML/CSS/JS</span>
+                    <span class="skill-tag-usman">Git/GitHub</span>
+                    <span class="skill-tag-usman">VS Code</span>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <h3><i class="fas fa-database" style="color: var(--neon-cyan);"></i> Data Handling</h3>
+                <div class="skill-tags-list">
+                    <span class="skill-tag-usman">Pandas</span>
+                    <span class="skill-tag-usman">NumPy</span>
+                    <span class="skill-tag-usman">Data Cleaning</span>
+                    <span class="skill-tag-usman">Matplotlib</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card" style="max-width: 900px; margin: 60px auto 0;">
+            <h3 style="margin-bottom: 20px; color: var(--neon-cyan);">Other Proficiencies</h3>
+            <ul style="text-align: left; max-width: 700px; margin: 0 auto; font-size: 1.1rem; color: var(--text-muted);">
+                <li>• Strong conceptual knowledge of Blockchain and distributed systems</li>
+                <li>• Web deployment of ML models using Streamlit</li>
+                <li>• Excellent problem-solving and analytical thinking</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p style="font-size: 1.1rem;">© 2025 Muhammad Usman. All Rights Reserved.</p>
+        <p style="margin-top: 15px;">
+            <a href="https://linkedin.com/in/usman-saeed786/" target="_blank">LinkedIn</a> | 
+            <a href="mailto:manoousman469@gmail.com">manoousman469@gmail.com</a>
+        </p>
+    </footer>
+
+    <script>
+        const currentPath = window.location.pathname.split("/").pop();
+        document.querySelectorAll('.nav a').forEach(link => {
+            if (link.getAttribute('href') === currentPath) link.classList.add('active');
+        });
+    </script>
+<script src="main.js"></script>
+</body>
+</html>
